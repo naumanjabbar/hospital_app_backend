@@ -1,5 +1,5 @@
 const DB_COLLECTIONS = {
-	campaign: 'campaigns',
+	campaign: 'users',
 };
 
 export default DB_COLLECTIONS;

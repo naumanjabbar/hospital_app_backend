@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-import { MONGODB_HOST, MONGODB_NAME } from '../../config/mongo';
+import { MONGODB_HOST, MONGODB_NAME } from '../../src/config/mongo';
 
 mongoose.Promise = global.Promise;
 
