@@ -1,7 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 
-import { FILE_SIZE_LIMIT } from './src/config';
+import { FILE_SIZE_LIMIT } from './config';
 
 const app = express();
 app.use(express.json());

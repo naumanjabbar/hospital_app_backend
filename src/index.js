@@ -1,5 +1,5 @@
 import app from './app';
-import { PORT } from './src/config';
+import { PORT } from './config';
 import connectDatabase from './services/MongoDb/connection';
 
 (async () => {
