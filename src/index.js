@@ -1,4 +1,5 @@
 import app from './app';
+import appRoutes from './routes';
 import { PORT } from './config';
 import connectDatabase from './services/MongoDb/connection';
 
@@ -7,9 +8,7 @@ import connectDatabase from './services/MongoDb/connection';
         const { err: mongoConnectionErr } = await connectDatabase();
         if (mongoConnectionErr) throw new Error(mongoConnectionErr);
 
-        app.get('/', (req, res) => {
-            res.send('Hello, World!');
-        });
+        app.use('/', appRoutes);
 
         app.use((req, res) =>
             res.status(404).json({

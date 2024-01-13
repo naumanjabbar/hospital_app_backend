@@ -3,6 +3,7 @@ import { pick } from 'lodash';
 import { isNonEmptyArray } from '../../../utils/helpers';
 
 import { parseQueryOptions, parseWriteOperations } from './parsers';
+import logDBError from './logDBError'
 
 export async function count(CollectionModel, queryOptions) {
 	try {

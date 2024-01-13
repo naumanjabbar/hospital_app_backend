@@ -9,17 +9,17 @@ const createSchema = (properties = {}) => {
 
 			createdBy: {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: DB_COLLECTIONS.user,
+				ref: DB_COLLECTIONS.users,
 			},
 
 			updatedBy: {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: DB_COLLECTIONS.user,
+				ref: DB_COLLECTIONS.users,
 			},
 
 			deletedBy: {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: DB_COLLECTIONS.user,
+				ref: DB_COLLECTIONS.users,
 			},
 			deletedAt: {
 				type: Date,
